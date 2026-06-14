@@ -57,8 +57,22 @@ python3 -m http.server 8000
 
 ## 🌐 Déploiement
 
-Compatible avec **GitHub Pages**, **Netlify** ou **Vercel** : il suffit de
-servir le dossier tel quel (site statique).
+### GitHub Pages (automatique)
+
+Un workflow GitHub Actions (`.github/workflows/deploy.yml`) déploie le site à
+chaque push sur `main`. Pour l'activer :
+
+1. Fusionner cette branche dans `main`.
+2. Aller dans **Settings → Pages**.
+3. Sous **Build and deployment → Source**, choisir **GitHub Actions**.
+
+Le site sera ensuite publié automatiquement à l'adresse
+`https://malikatoukouta.github.io/portfolio-dev/`.
+
+### Autres plateformes
+
+Compatible aussi avec **Netlify** ou **Vercel** : il suffit de servir le
+dossier tel quel (site statique, aucune étape de build).
 
 ## 📝 Licence
 
