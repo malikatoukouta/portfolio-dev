@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio d'Adamou Abdourmalik, développeur web. Profil, compétences et projets en HTML, CSS, JavaScript et WordPress."
+    />
+    <meta name="author" content="Adamou Abdourmalik" />
+    <title>Adamou Abdourmalik — Développeur Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===================== En-tête / Navigation ===================== -->
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a href="#top" class="brand" aria-label="Retour à l'accueil">
+          <span class="brand__mark">AA</span>
+          <span class="brand__name">Adamou Abdourmalik</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <button
+            class="nav__toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Ouvrir le menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__menu" id="nav-menu">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact" class="nav__cta">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== Hero / Profil ===================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow reveal">👋 Bonjour, je suis</p>
+          <h1 class="hero__title reveal" id="hero-title">
+            Adamou Abdourmalik
+          </h1>
+          <p class="hero__subtitle reveal">
+            Développeur Web — <span class="accent">WordPress</span>, HTML, CSS &amp;
+            JavaScript
+          </p>
+          <p class="hero__text reveal">
+            Je conçois des sites et des interfaces web propres, accessibles et
+            agréables à utiliser. Passionné par le code soigné et l'expérience
+            utilisateur, je transforme des maquettes en produits concrets.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
+          </div>
+          <ul class="hero__socials reveal" aria-label="Réseaux">
+            <li>
+              <a href="https://github.com/malikatoukouta" target="_blank" rel="noopener">GitHub</a>
+            </li>
+            <li>
+              <a href="mailto:abdourmalik@gmail.com">Email</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== À propos ===================== -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <p class="section__kicker reveal">À propos</p>
+          <h2 class="section__title reveal" id="about-title">
+            Un peu plus sur moi
+          </h2>
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p>
+                Développeur web formé chez <strong>OpenClassrooms</strong>, je
+                travaille principalement avec <strong>WordPress</strong> ainsi
+                qu'avec les fondamentaux du web : HTML, CSS et JavaScript.
+              </p>
+              <p>
+                J'aime partir d'une maquette pour la rendre vivante : intégration
+                fidèle, animations discrètes, code lisible et respect des bonnes
+                pratiques d'accessibilité. Chaque projet est l'occasion
+                d'apprendre quelque chose de nouveau.
+              </p>
+              <p>
+                En dehors du code, je continue à explorer de nouveaux outils et
+                à peaufiner mes projets personnels disponibles sur GitHub.
+              </p>
+            </div>
+            <ul class="about__stats reveal" aria-label="Quelques chiffres">
+              <li>
+                <span class="about__num">20+</span>
+                <span class="about__label">Projets publiés</span>
+              </li>
+              <li>
+                <span class="about__num">3+</span>
+                <span class="about__label">Ans à coder</span>
+              </li>
+              <li>
+                <span class="about__num">100%</span>
+                <span class="about__label">Curiosité</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Compétences ===================== -->
+      <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <p class="section__kicker reveal">Compétences</p>
+          <h2 class="section__title reveal" id="skills-title">
+            Ce que j'utilise au quotidien
+          </h2>
+          <div class="skills__grid">
+            <article class="skill-card reveal">
+              <h3>Intégration</h3>
+              <ul>
+                <li>HTML5 sémantique</li>
+                <li>CSS3 / Flexbox / Grid</li>
+                <li>Responsive design</li>
+                <li>Accessibilité (a11y)</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>JavaScript</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Manipulation du DOM</li>
+                <li>API &amp; fetch</li>
+                <li>Animations &amp; interactions</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>WordPress</h3>
+              <ul>
+                <li>Thèmes &amp; thèmes enfants</li>
+                <li>PHP / hooks</li>
+                <li>Elementor</li>
+                <li>Personnalisation</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Outils</h3>
+              <ul>
+                <li>Git &amp; GitHub</li>
+                <li>Prettier / Stylelint</li>
+                <li>VS Code</li>
+                <li>Figma (maquettes)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Projets ===================== -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="section__kicker reveal">Projets</p>
+          <h2 class="section__title reveal" id="projects-title">
+            Quelques réalisations
+          </h2>
+          <p class="section__lead reveal">
+            Une sélection de projets. Le code source est disponible sur GitHub.
+          </p>
+
+          <div class="projects__grid">
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>Booki</h3>
+                <span class="tag">HTML · CSS</span>
+              </div>
+              <p>
+                Page d'accueil d'une agence de voyages intégrée à partir d'une
+                maquette, avec Flexbox et un design responsive.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/Booki"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>Print-it</h3>
+                <span class="tag">HTML · CSS · JS</span>
+              </div>
+              <p>
+                Carrousel d'images dynamique en JavaScript pour le site vitrine
+                d'une imprimerie.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/Print-it"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>Music Player</h3>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p>
+                Lecteur de musique interactif : lecture/pause, navigation entre
+                pistes et barre de progression.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/Music_Player"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>To-Do List</h3>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p>
+                Application de gestion de tâches : ajout, suppression et suivi
+                des tâches du quotidien.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/TodoList"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>Convertisseur de devise</h3>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p>
+                Outil de conversion de devises en temps réel à partir de taux de
+                change.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/Convertisseur-de-devise"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <h3>Calculatrice</h3>
+                <span class="tag">HTML · JS</span>
+              </div>
+              <p>
+                Calculatrice fonctionnelle gérant les opérations de base avec une
+                interface claire.
+              </p>
+              <a
+                class="project-card__link"
+                href="https://github.com/malikatoukouta/Calculatrice"
+                target="_blank"
+                rel="noopener"
+                >Code source <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+
+          <p class="projects__more reveal">
+            <a href="https://github.com/malikatoukouta" target="_blank" rel="noopener"
+              >Voir tous mes dépôts sur GitHub <span aria-hidden="true">↗</span></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== Contact ===================== -->
+      <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <p class="section__kicker reveal">Contact</p>
+          <h2 class="section__title reveal" id="contact-title">
+            Travaillons ensemble
+          </h2>
+          <p class="section__lead reveal">
+            Une idée de projet, une question ou simplement envie d'échanger ?
+            Écrivez-moi, je réponds avec plaisir.
+          </p>
+
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/abdourmalik@gmail.com"
+            method="POST"
+          >
+            <div class="contact-form__row">
+              <div class="field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Envoyer le message</button>
+          </form>
+
+          <p class="contact__direct reveal">
+            Ou directement par email :
+            <a href="mailto:abdourmalik@gmail.com">abdourmalik@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== Pied de page ===================== -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year"></span> Adamou Abdourmalik — Développeur Web</p>
+        <ul class="site-footer__links">
+          <li><a href="https://github.com/malikatoukouta" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:abdourmalik@gmail.com">Email</a></li>
+          <li><a href="#top">Haut de page</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bouton « retour en haut » (révélé par JS — amélioration progressive). -->
+    <button type="button" id="scroll-top" aria-label="Revenir en haut de la page" hidden>
+      <span aria-hidden="true">&uarr;</span>
+    </button>
+
+    <script src="assets/js/reveal.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
