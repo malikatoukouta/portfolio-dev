@@ -3,12 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===================== SEO ===================== -->
+    <title>Adamou Abdourmalik — Développeur Web (WordPress, HTML, CSS, JS)</title>
     <meta
       name="description"
       content="Portfolio d'Adamou Abdourmalik, développeur web. Profil, compétences et projets en HTML, CSS, JavaScript et WordPress."
     />
+    <meta
+      name="keywords"
+      content="développeur web, intégrateur, WordPress, HTML, CSS, JavaScript, portfolio, freelance, front-end"
+    />
     <meta name="author" content="Adamou Abdourmalik" />
-    <title>Adamou Abdourmalik — Développeur Web</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://malikatoukouta.github.io/portfolio-dev/" />
+
+    <!-- ===================== Open Graph (Facebook, LinkedIn…) ===================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Adamou Abdourmalik — Développeur Web" />
+    <meta
+      property="og:description"
+      content="Portfolio d'Adamou Abdourmalik, développeur web. Profil, compétences et projets en HTML, CSS, JavaScript et WordPress."
+    />
+    <meta property="og:url" content="https://malikatoukouta.github.io/portfolio-dev/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/134892145?v=4" />
+    <meta property="og:image:alt" content="Portrait d'Adamou Abdourmalik" />
+
+    <!-- ===================== Twitter / X ===================== -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Adamou Abdourmalik — Développeur Web" />
+    <meta
+      name="twitter:description"
+      content="Portfolio d'Adamou Abdourmalik, développeur web (WordPress, HTML, CSS, JavaScript)."
+    />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/134892145?v=4" />
+
+    <!-- ===================== Favicon ===================== -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +51,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ===================== Données structurées (schema.org) ===================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Adamou Abdourmalik",
+        "jobTitle": "Développeur Web",
+        "url": "https://malikatoukouta.github.io/portfolio-dev/",
+        "image": "https://avatars.githubusercontent.com/u/134892145?v=4",
+        "email": "mailto:abdourmalik@gmail.com",
+        "sameAs": ["https://github.com/malikatoukouta"],
+        "knowsAbout": ["WordPress", "HTML", "CSS", "JavaScript", "Accessibilité web"]
+      }
+    </script>
   </head>
 
   <body>
@@ -209,7 +258,10 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>Booki</h3>
-                <span class="tag">HTML · CSS</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
               </div>
               <p>
                 Page d'accueil d'une agence de voyages intégrée à partir d'une
@@ -227,7 +279,11 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>Print-it</h3>
-                <span class="tag">HTML · CSS · JS</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
               </div>
               <p>
                 Carrousel d'images dynamique en JavaScript pour le site vitrine
@@ -245,7 +301,9 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>Music Player</h3>
-                <span class="tag">JavaScript</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>JavaScript</li>
+                </ul>
               </div>
               <p>
                 Lecteur de musique interactif : lecture/pause, navigation entre
@@ -263,7 +321,9 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>To-Do List</h3>
-                <span class="tag">JavaScript</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>JavaScript</li>
+                </ul>
               </div>
               <p>
                 Application de gestion de tâches : ajout, suppression et suivi
@@ -281,7 +341,9 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>Convertisseur de devise</h3>
-                <span class="tag">JavaScript</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>JavaScript</li>
+                </ul>
               </div>
               <p>
                 Outil de conversion de devises en temps réel à partir de taux de
@@ -299,7 +361,10 @@
             <article class="project-card reveal">
               <div class="project-card__top">
                 <h3>Calculatrice</h3>
-                <span class="tag">HTML · JS</span>
+                <ul class="project-card__tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>JS</li>
+                </ul>
               </div>
               <p>
                 Calculatrice fonctionnelle gérant les opérations de base avec une

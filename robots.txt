@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://malikatoukouta.github.io/portfolio-dev/sitemap.xml

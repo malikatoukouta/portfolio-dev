@@ -518,20 +518,26 @@ a:hover {
 }
 
 .project-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
   margin-bottom: 0.85rem;
 }
 
 .project-card__top h3 {
   font-size: 1.25rem;
   color: var(--color-text);
+  margin-bottom: 0.6rem;
 }
 
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card__tags li,
 .tag {
-  flex-shrink: 0;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.02em;
