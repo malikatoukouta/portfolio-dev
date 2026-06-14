@@ -25,6 +25,9 @@
   --color-muted: #5b6472;
   --color-border: #e4e8f0;
 
+  /* Fond de l'en-tête translucide (adapté au thème). */
+  --header-bg: rgba(255, 255, 255, 0.85);
+
   /* Typographie */
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Space Grotesk", var(--font-sans);
@@ -38,6 +41,25 @@
 
   /* Transitions */
   --transition: 0.2s ease;
+}
+
+/* ==========================================================================
+   Thème sombre — surcharge des variables de couleur.
+   Appliqué via data-theme="dark" sur <html> (préférence système ou choix
+   manuel, géré dans assets/js/theme.js).
+   ========================================================================== */
+:root[data-theme="dark"] {
+  --color-dark: #2563eb; /* monogramme & bouton retour-haut en bleu */
+  --color-dark-hover: #1d4ed8;
+  --color-shadow: rgba(0, 0, 0, 0.55);
+
+  --color-bg: #0f141b;
+  --color-bg-alt: #161c26;
+  --color-text: #e7ebf2;
+  --color-muted: #9aa6b6;
+  --color-border: #28303d;
+
+  --header-bg: rgba(15, 20, 27, 0.85);
 }
 
 /* ==========================================================================
@@ -60,6 +82,7 @@ body {
   line-height: var(--line-height-base);
   color: var(--color-text);
   background-color: var(--color-bg);
+  transition: background-color var(--transition), color var(--transition);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -174,7 +197,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: var(--header-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -216,10 +239,50 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav__menu {
   display: flex;
   align-items: center;
   gap: 1.75rem;
+}
+
+/* Bouton de bascule clair / sombre. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition),
+    background-color var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.theme-toggle__sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__sun {
+  display: block;
 }
 
 .nav__menu a {
