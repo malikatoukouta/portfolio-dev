@@ -615,10 +615,32 @@ a:hover {
   flex: 1;
 }
 
-.project-card__link {
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.1rem;
   margin-top: 1.25rem;
+}
+
+.project-card__demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
   font-weight: 600;
-  align-self: flex-start;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+
+.project-card__demo:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-light);
+}
+
+.project-card__link {
+  font-weight: 600;
 }
 
 .projects__more {
